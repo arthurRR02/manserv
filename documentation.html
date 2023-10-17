@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home-style.css">
+    <title>Manserv</title>
+    <script src="assets/ts/home.ts"></script>
+</head>
+
+<body onload="verifyOpenedPage()">
+    <div class="header">
+        <div class="menu" onclick="verifyMenuButtonAction()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div id="navigation">
+                <svg id="close-button" onClick="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+                <ul>
+                    <li>
+                        <a id="register-option" href="register.html">
+                            <span class="icon"></span>
+                            <span class="title">Cadastro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="consult-option" href="consult.html">
+                            <span class="icon"></span>
+                            <span class="title">Consulta</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="documentation-option" href="documentation.html">
+                            <span class="icon"></span>
+                            <span class="title">Documentação</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contact-option" href="contact.html">
+                            <span class="icon"></span>
+                            <span class="title">Fale Conosco</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="home.html"><img src="assets/images/manserv-logo.png" alt="company-logo"></a>
+            <h2>PARCEIROS</h2>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Aqui ficará a documentação</h2>
+        <div class="docs">
+        <div class="contract-docs">
+            <img src="assets/images/dc.png" alt="documentação-contrato">
+            <p>Documentação <br>contrato</p>
+        </div>
+        <div class="monthly-docs">
+            <img src="assets/images/dm.png" alt="documentacao-mensal">
+            <p>Documentação <br>mensal</p>
+        </div>
+        <div class="partner-personal-docs">
+            <img src="assets/images/dpc.png" alt="documentacao-pessoal">
+            <p>Documentação<br> pessoal do<br> colaborador</p>
+        </div>
+        <div class="integration-docs">
+            <img src="assets/images/doc.png" alt="integracao">
+            <p>Integração</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
