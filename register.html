@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/home-style.css">
+    <link rel="stylesheet" href="assets/css/register-style.css">
     <title>Manserv</title>
     <script src="assets/js/home.js"></script>
 </head>
+
 <body onload="verifyOpenedPage()">
     <div class="header">
         <div class="menu" onclick="verifyMenuButtonAction()">
@@ -15,10 +17,13 @@
             <div class="menu-line"></div>
             <div class="menu-line"></div>
             <div id="navigation">
-                <svg id="close-button" onClick="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                <svg id="close-button" onClick="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
                 <ul>
                     <li>
-                        <a id="register-option"href="register.html">
+                        <a id="register-option" href="register.html">
                             <span class="icon"></span>
                             <span class="title">Cadastro</span>
                         </a>
@@ -46,11 +51,104 @@
         </div>
         <div class="logo">
             <a href="index.html"><img src="assets/images/manserv-logo.png" alt="company-logo"></a>
-            <h2>PARCEIROS</h2>
         </div>
     </div>
     <div class="content">
-        <h2>Aqui ficará o cadastro</h2>
+        <h1>Cadastro</h1>
+        <form>
+            <div class="doc-analisation">
+                <h2>Análise de Documentação</h2>
+
+                <div class="personal-info">
+                    <div class="name">
+                        <label>Nome</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="birthday-naturalness">
+                        <div class="birthday">
+                            <label>Nascimento</label>
+                            <input id="day" placeholder="dd" maxlength="2" type="number"
+                                oninput="limitDayInputLength()">
+                            <input id="month" placeholder="MM" maxlength="2" type="number"
+                                oninput="limitMonthInputLength()">
+                            <input id="year" placeholder="yyyy" maxlength="4" type="number"
+                                oninput="limitYearInputLength()">
+                        </div>
+
+                        <div class="naturalness">
+                            <label>Naturalidade</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="rg-cpf">
+                        <div class="rg">
+                            <label>RG</label>
+                            <input maxlength="10" type="number" id="rg" placeholder="99.999.999-99">
+                        </div>
+                        <div class="cpf">
+                            <label>CPF</label>
+                            <input maxlength="11" type="number" id="cpf" placeholder="999.999.999-99">
+                        </div>
+                    </div>
+
+                    <div class="phone">
+                        <label>Celular</label>
+                        <input id="ddd" type="number" maxlength="2" placeholder="DDD">
+                        <input id="phone-number" type="number" maxlength="9" placeholder="9 9999-9999">
+                    </div>
+                    <div class="attach-doc">
+                        <label for="attach-btn" class="btn">Anexar RG e CPF</label>
+                        <input id="attach-btn" type="file" accept="application/pdf, image/jpeg">
+                        <div class="attached-docs"></div>
+                    </div>
+
+                    <div class="cnh">
+                        <div class="cnh-input">
+                            <label>CNH</label>
+                            <input id="cnh-input" type="number">
+                            <input id="attach-cnh-btn" type="file" accept="application/pdf, image/jpeg">
+                            <div id="attached-cnh"></div>
+                        </div>
+                    </div>
+
+                    <div class="pis">
+                        <div class="pis-input">
+                            <label>PIS</label>
+                            <input id="cnh-input" type="number">
+                            <input id="attach-pis-btn" type="file" accept="application/pdf, image/jpeg">
+                            <div id="attached-pis"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attach-qualification-docs">
+                    <h2 id="qualification-doc-title">Documentação qualificação</h2>
+
+                    <h3 id="education-certificate">Certificado de escolaridade</h3>
+                    <h3 id="aso">ASO (Atestado de saúde ocupacional)</h3>
+                    <h3 id="training-certificate">Certificado de treinamentos</h3>
+
+                    <h2 id="qualification-doc-attach-title">Anexos</h2>
+
+                    <input id="attach-education-certificate-btn" type="file" accept="application/pdf, image/jpeg">
+                    <input id="attach-aso-btn" type="file" accept="application/pdf, image/jpeg">
+                    <input id="attach-training-certificate-btn" type="file" accept="application/pdf, image/jpeg">
+                </div>
+
+                <div class="checkbox-accept">
+                    <input id="checkbox" type="checkbox">
+                    <label>Declaro estar ciente que a documentação só será realizada após a disponibilização de todos os
+                        anexos.</label>
+                </div>
+
+                <div class="send-doc">
+                    <button id="send-doc-btn" onclick="sendDocs()">Enviar documentação</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>

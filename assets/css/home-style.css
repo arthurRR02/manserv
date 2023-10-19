@@ -58,12 +58,6 @@ body {
     color: #FF460A;
 }
 
-
-.logo {
-    display: inline-flex;
-    margin: auto;
-}
-
 #close-button {
     height: 30px;
     fill:#ffffff;
@@ -77,10 +71,14 @@ body {
     fill: #FF460A;
 }
 
+.logo {
+    text-align: center;
+    margin: auto;
+}
+
 .logo img{
-    width: auto;
+    width: 100%;
     height: auto;
-    
 }
 
 .logo a {
@@ -97,9 +95,6 @@ body {
 }
 
 .content h2 {
-    width: 100%;
-    position: flex;
-    line-height: 30px;
     color: #FFFFFF;
     text-align: center;
     margin-top: 50px;

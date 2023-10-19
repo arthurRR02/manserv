@@ -56,4 +56,50 @@ function verifyOpenedPage() {
     }
 }
 
+function limitDayInputLength() {
+    var input = document.getElementById("day")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function limitMonthInputLength() {
+    var input = document.getElementById("month")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function limitYearInputLength() {
+    var input = document.getElementById("year")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function limitRg() {
+    var input = document.getElementById("rg")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function limitCpf() {
+    var input = document.getElementById("cpf")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function limitDdd() {
+    var input = document.getElementById("ddd")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function limitPhoneNumber() {
+    var input = document.getElementById("phone-number")
+    if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength)
+    else if (input.value < 0) input.value = 0
+}
+
+function sendDocs() {
+    window.alert("Documentação enviada com sucesso!")
+}
+
 

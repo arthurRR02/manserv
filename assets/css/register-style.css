@@ -1,0 +1,355 @@
+@font-face {
+    font-family: ahamono;
+    src: url(/assets/fonts/ahamono.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #262626;
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    padding: 1% 0 1% 0;
+    background: #000000;
+    display: flex;
+    flex: 0 1 auto;
+}
+
+.menu-line {
+    width: 35px;
+    height: 3px;
+    margin: 10px 20px;
+    background: #FFFFFF;
+}
+
+#navigation {
+    position: fixed;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    transition: 0.5s;
+    padding: 0%;
+    overflow-x: hidden;
+    z-index: 9;
+}
+
+#navigation li {
+    margin-top: 30px;
+}
+
+#navigation a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#navigation a:hover {
+    color: #FF460A;
+}
+
+#close-button {
+    height: 30px;
+    fill: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px 0 0;
+}
+
+#close-button:hover {
+    fill: #FF460A;
+}
+
+.logo {
+    text-align: center;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.content {
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex: 1 1 auto;
+}
+
+.content h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.doc-analisation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+}
+
+.doc-analisation h2 {
+    width: 100%;
+    background-color: #FF460A;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+label {
+    color: #FFFFFF;
+    margin: 10px 30px 10px 10px;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px 0 30px;
+}
+
+.name {
+    display: flex;
+}
+
+.name input {
+    width: 90%;
+    resize: none;
+    justify-self: center;
+}
+
+.birthday-naturalness {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.birthday {
+    width: 40%;
+}
+
+.birthday input {
+    width: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=file] {
+    color: #FFFFFF;
+}
+
+.naturalness {
+    width: 50%;
+    display: flex;
+}
+
+.naturalness input {
+    width: 50%;
+}
+
+.rg-cpf {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.rg {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.rg input {
+    width: 50%;
+}
+
+.cpf {
+    width: 50%;
+}
+
+.cpf input {
+    width: 50%;
+}
+
+.phone {
+    display: flex;
+    margin-top: 30px;
+    justify-content: left;
+}
+
+#ddd {
+    width: 5%;
+    margin-right: 10px;
+}
+
+.attach-doc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#attach-btn {
+    padding: 20px;
+}
+
+.cnh {
+    display: flex;
+    margin-top: 30px;
+    justify-content: left;
+}
+
+#attach-cnh-btn {
+    padding: 10px;
+}
+
+.pis {
+    display: flex;
+    margin-top: 30px;
+    justify-content: left;
+}
+
+#attach-pis-btn {
+    padding: 10px;
+}
+
+.attach-qualification-docs {
+    width: 100%;
+    display: grid;
+    margin-top: 30px;
+    justify-items: center;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+
+#qualification-doc-title {
+    background-color: #FF460A;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#qualification-doc-attach-title {
+    background-color: #FF460A;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#education-certificate {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #D9D9D9;
+    color: #000000;
+    margin: 30px 30px 0 0;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#aso {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #D9D9D9;
+    color: #000000;
+    margin: 20px 30px 0 0;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#training-certificate {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #D9D9D9;
+    color: #000000;
+    margin: 20px 30px 0 0;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#attach-education-certificate-btn {
+    width: 80%;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#attach-aso-btn {
+    width: 80%;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#attach-training-certificate-btn {
+    width: 80%;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.checkbox-accept {
+    width: 100%;
+    margin: 100px 0 30px 0;
+    text-align: center;
+}
+
+.checkbox-accept input {
+    margin: 0;
+}
+
+.send-doc {
+    width: 100%;
+    text-align: center;
+}
+
+#send-doc-btn {
+    width: 40%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
